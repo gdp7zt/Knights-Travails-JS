@@ -1,16 +1,6 @@
 let queue = [];
 let visited = [];
 
-const gameboard = () => {
-    let board = [];
-    for (let i = 1; i <= 8; i++){
-        for(let j = 1; j <= 8; j++){
-            board.push([i, j]);
-        }
-    }
-    return board;
-};
-
 function possibleMoves(location){
     let moves = [
         [location[0] + 2, location[1] + 1],
